@@ -1,33 +1,44 @@
 # Título del Proyecto
 
-_Acá va un párrafo que describa lo que es el proyecto_
+Es un sitio web dedicada a la visualización del historial de reservas de un restaurante mediante la reserva y liberación de mesas en el mismo sitio.
+
+Además permite la gestión del numero de comensales de un espacio en un tiempo conecreto con lo cual podemos visualizar que mesas o salas se han ocupado con mayor numero de comensales. 
+Tambien se pueden generar y gestionar incidencias que puedan ocurrir en las mesas, que impidan la reserva de la misma.
 
 ## Comenzando 🚀
+Para obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas, usaremos XAMPP para hacer la copia y probar. 
+(En el siguiente paso explicaremos como instalar XAMPP). XAMPP nos genera localmente un sevridor LAMP fácil de gestionar para desarrollar comodamente.
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** (Despliegue) para conocer como desplegar el proyecto.
+Además usaremos GitHub como portal de Git y asi llevar un control de versiones de la aplicación web.
+Para ello, es necesario crear una cuenta en GitHub y tener un conocimiento básico de gestion de ficheros en tu sistema operativo.
 
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+Comenzaremos instalando XAMPP para desplegar el entorno de desarrollo. Lo descargaremos primero [Windows](https://www.apachefriends.org/xampp-files/8.0.12/xampp-windows-x64-8.0.12-0-VS16-installer.exe) o [MacOS](https://www.apachefriends.org/xampp-files/8.0.12/xampp-osx-8.0.12-0-vm.dmg)
 
-```
-Da un ejemplo
-```
+Una vez lo tengamos instalado, hemos de arrancar los servicios desde el panel de control de XAMPP en el apartado Manage Servers si tenemos el software en inglés o Administrar servicios en español. ![img](https://i.gyazo.com/406d2e3c6268130f0c0b0f49dca9393f.png)
+
+Desde este apartado podemos arrancar o parar servicios e incluso configurar las aplicaciones, modificando puertos o incluso ver los logs que dejan estas aplicaciones.
+
+Igual de importante es instalar el controlador de versions Git, para luego combinar con GitHub. [Windows](https://git-scm.com/downloads#:~:text=macOS-,Windows,-Linux/Unix) o [MacOS](https://git-scm.com/download/mac)
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+Una vez tengamos los softwares instalados y con los servicios arrancados como explicado anteriormente, hemos de importar el proyecto a nuestro entorno de desarrollo local.
 
-_Dí cómo será ese paso_
+Para ello iremos al directorio htdocs hubicaod en la raiz de la aplicación XAMPP, una vez estemos posicionados desde el terminal de GIT en este directorio ejecutamos el siguiente comando
 
 ```
-Da un ejemplo
+git clone https://github.com/100007217/PR01.git
 ```
+Ahora deberemos implementar en nuestro servidor de BBDD de XAMPP la base de datos del proyecto. Dentro de la carpeta bd que acabmos de importar desde github se encuentran dos archivos. **bd_bar.sql**, nos permite generar la estructura de la base de datos y **bd_bar_inserts.sql** ejecuta los inserts en la bbdd creada.
 
-_Y repite_
+Ahora solo irnos a [este enlace](http://localhost/phpmyadmin/) para administrar las bases de datos en XAMPP usando PhpMyAdmin.
+
+En este momento podremos hacer la importacion de dos maneras, podemos copiar el contenido del archivo sql y pegarlo en el campo de texto de SQL o importar directamente el archivo SQL pulsando en la pestaña Importar.
+![img](https://i.gyazo.com/9d4eaaf2409b16aa2b5161bf8f0e4274.png)
+
 
 ```
 hasta finalizar
