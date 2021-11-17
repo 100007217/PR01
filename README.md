@@ -37,75 +37,67 @@ Ahora deberemos implementar en nuestro servidor de BBDD de XAMPP la base de dato
 Ahora solo irnos a [este enlace](http://localhost/phpmyadmin/) para administrar las bases de datos en XAMPP usando PhpMyAdmin.
 
 En este momento podremos hacer la importacion de dos maneras, podemos copiar el contenido del archivo sql y pegarlo en el campo de texto de SQL o importar directamente el archivo SQL pulsando en la pestaña Importar.
-![img](https://i.gyazo.com/9d4eaaf2409b16aa2b5161bf8f0e4274.png)
+![img](https://i.gyazo.com/ef4852689af26a97e2f57f8490f43330.png)
 
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
+Primero deberemos importar el archivo de estructuras y seguidamente el archivo de inserts. Una vez lo hayamos hecho tendremos la base de datos insertada en el servidor MySQL de XAMPP
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+_Ahora desplegaremos el sitio web sobre una pagina de hosting como 000webhost, la cual permite tener un servidor LAMP de manera gratuita con algunas limitaciones.
+
+Una vez hayamos creado el sitio web desde el Wizard que ofrece 000Webhost, nos iremos a la herramienta "File Manager" dentro del sitio web.
+Ahora iremos al apartado "public_html\" y depslegaremos todos los archivos que hayamos clonado desde el GitHub. Este directorio actua como la carpeta htdocs en XAMPP que hemos visto anteriormente.
+![img](https://i.gyazo.com/9d4eaaf2409b16aa2b5161bf8f0e4274.png)
+
+
+Una vez hayamos subido los archivos del repositorio, implementaremos la bd en el servidor usando la herramienta "Database Manager", aqui crearemos la base de datos.
+¡¡IMPORTANTE!! A la hora de crear la base de datos se generará un nombre y un usuario, que serán importantes más adelante para configurar la conexión a la bd, así como el host. 
+
+![img](https://i.gyazo.com/232e6e0ffb8a23a3a9335184f42bc189.png)
+
+Ahora procederemos a importar la base de datos, el gestor de la bbdd es PHPMyAdmin con lo cual podemos ver el apartado anterior para ver como desplegarla.
+
+Una vez hayamos importado la bbdd, debemos modificar el archivo services/config.php y aqui ingresaremos los datos obtenidos al generar la bd.
+![img](https://i.gyazo.com/b21498a3e849d49fcc40c0e454952066.png)
+
+
+Aqui tienes el enlace al hosting creado por mi, se debería ver igual [enlace](https://morfeo21.000webhostapp.com/)
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+_Las herramientas usada en este proyecto han sido 
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [Visual Studio Code](https://code.visualstudio.com/docs) - El editor de codigo usado para generar la BD, PHP y todos los elementos web en JS, CSS y HTML
+* [MySQL](https://dev.mysql.com/doc/) - El gestor de base de datos usado
+* [PHP](https://www.php.net/docs.php) - Lenguaje de programación basico para la formación del sitio
+* [XAMPP](https://www.apachefriends.org/docs/) - Software de virtualización local de servidor LAMP
+* [000Webhost](https://www.000webhost.com/website-faq) - Hosting usado para alojar el sitio web
 
 ## Contribuyendo 🖇️
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+Para contribuir a nuestro proyecto se pueden hacer pull requests sin problemas, que los aceptemos es otra cosa.
 
 ## Wiki 📖
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+Para encontrar mas documentación que en este README, lo cual es dificil. Puedes escribir un mail a gerard.gomez@dispostable.com
 
 ## Versionado 📌
 
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+Usamos [GitHub](https://github.com/) para el versionado. Para todas las versiones disponibles, mira el apartado releases del repositorio en el que estás.
 
 ## Autores ✒️
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [dannylarrea](https://github.com/dannylarrea)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Gerard Gómez** - * PHP + Backend * - [gerard.gomez](https://github.com/100007217)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+También puedes mirar la lista de todos los [contribuyentes](L.Fernandez y M.Diaz)(https://github.com/dannylarrea/MORFEO21) quíenes han participado en este proyecto. 
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia (Creative Commons). Puedes hacer lo que quieras con el codigo del repositorio
 
 ## Expresiones de Gratitud 🎁
 
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
+* Spamea a tus amigos sobre este proyecto 📢
+* Invita una cerveza 🍺 o un café ☕ a gerard.gomez
